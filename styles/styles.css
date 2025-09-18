@@ -1,3 +1,18 @@
+:root{
+  --bg: #0a0f3d;               
+  --bg-2: #f6f7fb;             
+  --text: #1f2430;             
+  --muted: #5b6475;           
+  --brand: #1f4af4;           
+  --surface: #ffffff;          
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
+  --gap: clamp(12px, 2.4vw, 24px);
+  --container: 980px;
+  --h1: clamp(28px, 4vw, 40px);
+  --h2: clamp(22px, 3vw, 28px);
+  --h3: 18px;
+  }
 nav {
   background-color: darkblue;
   padding: 10px;
