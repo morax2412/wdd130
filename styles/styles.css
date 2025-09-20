@@ -1,3 +1,9 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 :root{
   --bg: #0a0f3d;
   --bg-2: #f6f7fb;
@@ -51,11 +57,6 @@ main{
 
 aside{
   width: 20rem;
-  margin: 1rem;
-  border: var(--border);
-  padding: 1rem;
-  background-color: var(--bg-2);
-  color: var(--text);
   text-align: center;
 }
 
@@ -63,11 +64,12 @@ aside img{
   width: 200px;
   height: auto;
 }
+aside h2 {
+  position: relative;
+  top: 1px;       /* distancia desde arriba de la imagen */
+  text-align: center; /* centra el texto horizontalmente */
+  }
 
-main img{
-  width: 150px;
-  height: auto;
-}
 
 footer{
   margin-top: 15px;
@@ -75,3 +77,14 @@ footer{
   text-align: center;
   padding: 8px 0;
 }
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+main img {
+  /* you most likely will have other CSS declarations here */
+  float: right;}
