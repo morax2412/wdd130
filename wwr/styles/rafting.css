@@ -57,10 +57,10 @@ color: #fff;
 }
 
 .hero article img{
-  float: right;
-  width: 125px;
-  margin-left: 12px;        /* separa del texto */
-  border-radius: 6px;
+float: right;
+width: 125px;
+margin-left: 10px;        /* separa del texto */
+border-radius: 6px;
 }
 
 .hero article{
