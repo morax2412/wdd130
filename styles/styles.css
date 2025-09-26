@@ -1,51 +1,46 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;        /* centra el bloque en la página */
 }
-header,.grid,  footer {
-      max-width: 840px;
-      margin: 0 auto;
-    }
+
+/* --- Base --- */
 :root{
-  --bg: #0a0f3d;
   --bg-2: #f6f7fb;
-  --surface: #ffffff;
-  --text: #1f2430;
-  --muted: #5b6475;
-  --brand: #1f4af4;
-  --brand-600: #1737b8;
   --border: 1px solid rgb(0 0 0 / .12);
 }
-
 body{
-  color: var(--text);
   background: var(--bg-2);
-  margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+  color: #1f2430;
 }
 
-nav {
-      background-color: steelblue;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+/* --- Nav --- */
+nav{
+  background: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a{
+  display: block;
+  padding: .5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; /* shorthand for white */
+}
 
-nav a {
-      display: block;
-      padding: 0.5rem;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #fff; /% shorthand for white %/ }
-
+/* --- Título --- */
 h1{
-  border-bottom: 2px solid #ccc;  /* ajusta color/grosor a tu diseño */
+  border-bottom: 2px solid #ccc;
   padding-bottom: .25rem;
+  margin-bottom: .75rem;
 }
 
+/* --- Imágenes --- */
 img{
   width: 150px;
   height: auto;
@@ -53,52 +48,51 @@ img{
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
+main img{ float: right; margin-left: 1rem; }
 
-p{
-  padding: 0;
+/* --- Layout con Grid --- */
+.grid{
+  display: grid;
+  grid-template-columns: 20rem 1fr; /* aside izquierda, main derecha */
+  align-items: start;               /* que todo arranque arriba */
+  column-gap: 1.5rem;               /* separación entre columnas */
 }
-.grid {
-      display: grid;
-      align-items: center;
-      grid-template-columns: 20rem 1fr;
-    }
+
+/* ¡QUITAMOS centrado extra del main! */
 main{
-  max-width: 840px;
-  margin: 0 auto;
+  /* no max-width, no margin: 0 auto; */
+  margin: 1rem 0;                   /* apenas respira dentro de su celda */
 }
 
+/* Aside en columna 1 */
 aside{
- width: 20rem;
-      position: relative;
-      grid-column: 1/2;
-      grid-row: 1/2;
+  width: 20rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
-
 aside img{
-  width: 200px;
+  width: 100%;      /* que la imagen aproveche el ancho del aside */
   height: auto;
+  display: block;
 }
-aside h2 {
-  position: relative;
-  top: 1px;       /* distancia desde arriba de la imagen */
-  text-align: center; /* centra el texto horizontalmente */
-  }
+aside h2{
+  text-align: center;
+  margin: .5rem 0;
+}
 
+/* Caja gris reutilizable */
+.box{
+  margin: 1rem 0;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background: #ddd;
+  color: #000;
+}
 
+/* Footer */
 footer{
   margin-top: 15px;
   border-top: var(--border);
   text-align: center;
   padding: 8px 0;
 }
-/* Class Selectors */
-.box {
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 10%);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
-}
-main img {
-  /* you most likely will have other CSS declarations here */
-  float: right;}
