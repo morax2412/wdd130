@@ -12,11 +12,13 @@
 
 <body>
 
-    <header>
-        <img src="images/z-downriver.png" alt="Rafting Company Logo" width="110">
-        <nav>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="images/z-downriver.png" alt="Rafting Company Logo" width="110">
+        </a>
+        <nav class="site-nav pill">
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.html" aria-current="page">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
@@ -24,32 +26,66 @@
 
     <main>
         <!-- HERO -->
-        <div class="hero">
+        <section class="hero">
             <img src="images/rafting.jpg" alt="Rafting on the river">
             <h1>Rafting with us</h1>
-            <article>
-                <h2>Our Mission</h2>
-                <img src="images/rafting59_600.jpg" alt="Happy client">
-                <p>Our mission is to create safe and unforgettable river adventures for everyone.</p>
-            </article>
-        </div>
+            <div class="hero-card">
+                <article>
+                    <h2>Our Mission</h2>
+                    <img class="hero-small" src="images/rafting59_600.jpg" alt="Happy client">
+                    <p>Our mission is to create safe and unforgettable river adventures for everyone.</p>
+                </article>
+            </div>
+        </section>
 
         <!-- HISTORY -->
-        <section>
+        <section class="history">
             <h2>History</h2>
-            <p>We started as weekend guides and grew into a full outfitter.</p>
+            <div class="history-grid">
+                <p class="history-left">We started as weekend guides and grew into a full outfitter.</p>
+                <figure class="history-center">
+                    <img src="images/history.jpg" alt="Historic rafting photo">
+                    <figcaption>Since 1999</figcaption>
+                </figure>
+
+                <p class="history-right">
+                    Today we run multiple rivers across the region, investing in safety, training and stewardship.
+                </p>
+            </div>
         </section>
 
         <!-- ADVENTURE -->
-        <section>
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <!-- Aquí irán imágenes en la próxima tarea -->
+            <div class="adventures-grid">
+                <figure>
+                    <img src="images/losdientesdeldiablo.jpg" alt="Los Dientes del Diablo rapid">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bigmallard.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/thenarrows.jpg" alt="The Narrows">
+                    <figcaption>The Narrows</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/halfdayadventure.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/splash.jpg" alt="Splash Rapid">
+                    <figcaption>Splash Rapid</figcaption>
+                </figure>
+
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>©2025 Rafting with us — Cristian Inafuku</p>
-        <nav class="socialmedia">
+        <nav class="socialmedia" aria-label="Social media">
             <a href="https://facebook.com">
                 <img src="images/facebook-icon.png" alt="FacebookIcon">
             </a>
