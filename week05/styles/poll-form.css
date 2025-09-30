@@ -1,0 +1,132 @@
+/* Reset y caja consistente */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Body y tipografías base */
+body{
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #333;
+  background: #fafafa;
+}
+
+/* Cabecera */
+header{ width: 650px; margin: 0 auto; }
+h1{
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  color: navy;
+  text-align: center;
+}
+
+/* Formulario contenedor */
+form{
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: .5rem;
+  background-color: #eee;
+  display: grid;           /* base grid container */
+  gap: 1rem;
+}
+
+/* Fieldsets como grids */
+fieldset{
+  display: grid;
+  gap: .75rem;
+  margin: .25rem;          /* separa fieldsets del borde del form */
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background: #fff;
+  border-radius: .35rem;
+}
+
+/* Legend */
+legend{
+  padding: .35rem .5rem;
+  color: navy;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* Tipografía distinta para controles */
+label, input, button, select, textarea{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* Layout de cada par label-control */
+.form-item{
+  display: grid;
+  align-items: center;     /* centra verticalmente en layouts de varias columnas */
+  gap: .75rem;
+}
+
+/* 2 columnas: label 1fr, control 2fr */
+.column2{ grid-template-columns: 1fr 2fr; }
+
+/* 2 columnas: label 3fr, control 1fr (para checkbox) */
+.column1{ grid-template-columns: 3fr 1fr; }
+
+/* Etiquetas alineadas a la derecha con padding */
+label{ text-align: right; padding-right: 1rem; }
+
+/* Inputs/selects/textarea con padding amplio */
+input, select, textarea{
+  padding: .6rem .7rem;
+  border: 1px solid #bbb;
+  border-radius: .35rem;
+  background: #fff;
+}
+
+/* Ajustes de foco accesibles */
+input:focus, select:focus, textarea:focus, button:focus{
+  outline: 3px solid rgba(0, 64, 255, .25);
+  border-color: #4062ff;
+}
+
+/* Checkbox más grande y alineado */
+input[type="checkbox"]{
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+/* Textarea ancho completo en su grid celda */
+textarea{ resize: vertical; min-height: 120px; }
+
+/* Botón principal */
+button{
+  justify-self: start;     /* alinea a la izquierda dentro del form grid */
+  margin: .25rem 0 0 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .05s ease;
+}
+button:hover{ background-color: darkgreen; }
+button:active{ transform: translateY(1px); }
+
+/* Footer */
+footer{
+  margin: 1rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: .85rem;
+  color: #777;
+  border-top: 1px solid #ccc;
+  padding: .75rem 0;
+}
+
+/* Pequeñas mejoras responsivas */
+@media (max-width: 720px){
+  header, form, footer{ width: min(650px, 92vw); }
+  .column1, .column2{ grid-template-columns: 1fr; }
+  label{ text-align: left; padding-right: 0; }
+  button{ justify-self: stretch; margin-left: 0; }
+}
