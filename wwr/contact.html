@@ -4,15 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us | White Water Rafting</title>
+    <title>Contact Us | Rafting with us </title>
     <meta name="description"
-        content="Contact White Water Rafting for questions about our trips, reservations, or feedback.">
+        content="Contact Rafting with Us for questions about our trips, reservations, or feedback.">
     <meta name="author" content="Cristian Inafuku">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body>
-
+<body class="contact-page">
     <header class="site-header">
         <a class="logo" href="index.html">
             <img src="images/z-downriver.png" alt="Rafting Company Logo" width="110">
@@ -26,9 +25,11 @@
     </header>
 
     <main>
+        <h1>Contact Rafting with us</h1>
+
         <!-- 1) Company info -->
-        <section class="company-info">
-            <h2>White Water Rafting Company</h2>
+        <section class="company-info card section">
+            <h2> Rafting with us Company </h2>
             <address>
                 123 Main River Street<br>
                 Kolob, California<br>
@@ -38,15 +39,15 @@
         </section>
 
         <!-- 2) Grid: map (left) + form (right) -->
-        <div class="contact-grid">
-            <section class="map">
+        <div class="contact-grid section">
+            <section class="map card">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.1223315365096!2d130.73872817299514!3d32.78901548337736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f334762e110f%3A0x6c9a1d77de586743!2sMonkey%20D.%20Luffy%20statue!5e0!3m2!1ses-419!2sjp!4v1759630879541!5m2!1ses-419!2sjp"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    width="600" height="450" ; allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
-            <section class="contact-form">
+            <section class="contact-form card">
                 <h3>Get in Touch</h3>
                 <form action="#" method="post" class="form">
                     <label for="name">Name</label>
@@ -57,18 +58,22 @@
 
                     <fieldset>
                         <legend>Message Purpose</legend>
-                        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+
+                        <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                        <label for="purpose-general">General Inquiry</label>
+
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                        <label for="purpose-reservation">Reservation Question</label>
+
+                        <input type="radio" id="purpose-website" name="purpose" value="website">
+                        <label for="purpose-website">Website Suggestion</label>
                     </fieldset>
 
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" placeholder="Type your message" required></textarea>
 
-                    <label class="checkbox">
-                        <input type="checkbox" name="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
                     <button type="submit">Send Message</button>
                 </form>
@@ -76,39 +81,40 @@
         </div>
 
         <!-- 3) Employees -->
-        <section class="employees">
+        <section class="employees card section">
             <h3>We Are Here to Serve You</h3>
+
             <figure>
                 <img src="images/employee1.jpg" alt="John Rivers — Senior Guide">
                 <figcaption>John Rivers — Senior Guide</figcaption>
             </figure>
+
             <figure>
                 <img src="images/employee2.jpg" alt="Samantha Lake — Booking Manager">
                 <figcaption>Samantha Lake — Booking Manager</figcaption>
             </figure>
+
             <figure>
                 <img src="images/employee3.jpg" alt="Carlos Brooks — Equipment Specialist">
                 <figcaption>Carlos Brooks — Equipment Specialist</figcaption>
             </figure>
         </section>
     </main>
-    >
 
     <footer class="site-footer">
         <p>©2025 Rafting with us — Cristian Inafuku</p>
         <nav class="socialmedia" aria-label="Social media">
             <a href="https://facebook.com" aria-label="Facebook">
-                <img src="images/facebook-icon.png" alt="Facebook">
+                <img src="images/facebook-icon.png" alt="Facebook icon">
             </a>
             <a href="https://instagram.com" aria-label="Instagram">
-                <img src="images/instagram.png" alt="Instagram">
+                <img src="images/intagram.jpg" alt="Instagram icon">
             </a>
             <a href="https://x.com" aria-label="X / Twitter">
-                <img src="images/x.png" alt="X / Twitter">
+                <img src="images/x.png" alt="X / Twitter icon">
             </a>
         </nav>
     </footer>
-
 </body>
 
 </html>

@@ -223,4 +223,175 @@ h1, h2 {
   color: var(--primary-color);
 }
 
+/* ================================
+   CONTACT PAGE — add-on styles
+   (scopeado con .contact-page)
+   ================================ */
+
+/* Ajustes de main (solo en Contact) */
+.contact-page main{
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+/* H1 de la página de contacto */
+.contact-page h1{
+  text-align: center;
+  font-size: clamp(1.25rem, 2vw + 1rem, 1.75rem);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Contenedor: mapa + formulario */
+.contact-page .contact-grid{
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 900px){
+  .contact-page .contact-grid{
+    grid-template-columns: 1.1fr 1fr; /* mapa un poco más ancho */
+    align-items: start;
+  }
+}
+
+/* Info de la empresa */
+.contact-page .company-info{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact-page .company-info h2{
+  color: var(--primary-color);
+  margin-bottom: .5rem;
+}
+.contact-page .company-info address{
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* Mapa (sin estilos inline) */
+.contact-page .map.card{ padding: .75rem; }
+.contact-page .map iframe{
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: .5rem;
+}
+
+/* Formulario */
+.contact-page .contact-form.card{
+  background-color: var(--panel);
+  border: 1px solid rgba(0,0,0,.1);
+}
+.contact-page .contact-form h3{
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.contact-page .contact-form label{
+  display: block;
+  margin-top: .5rem;
+  font-weight: 700;
+}
+.contact-page .contact-form input,
+.contact-page .contact-form textarea{
+  width: 100%;
+  padding: .75rem;
+  margin-top: .25rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  font: inherit;
+}
+.contact-page .contact-form fieldset{
+  border: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+.contact-page .contact-form legend{
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.contact-page .contact-form button{
+  background-color: var(--slate);
+  color: #fff;
+  font-weight: 700;
+  padding: .8rem 1rem;
+  border: 0;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.contact-page .contact-form button:hover{
+  background-color: #0a5;
+}
+
+/* Empleados (grid uniforme) */
+.contact-page .employees.card{
+  padding: 1rem;
+}
+.contact-page .employees{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  text-align: center;
+}
+.contact-page .employees figure{
+  background: #f8f8fb;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  padding: .75rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,.04);
+}
+.contact-page .employees img{
+  width: 100%;
+  height: 260px;       /* controla el alto de todas */
+  object-fit: cover;   /* recorta sin deformar */
+  border-radius: 10px;
+  display: block;
+}
+.contact-page .employees figcaption{
+  margin-top: .5rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--slate);
+  line-height: 1.35;
+}
+
+/* ---- Tarjetas / cuadros reutilizables ---- */
+.card{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  padding: 1rem;
+}
+
+/* separaciones verticales entre secciones */
+.section{
+  margin-block: 1.25rem;
+}
+
+/* Títulos de secciones dentro de tarjetas */
+.card > h3{
+  text-align: center;
+  font-weight: 800;
+  color: var(--slate);
+  margin-bottom: .75rem;
+  position: relative;
+}
+/* línea decorativa debajo del h3 */
+.card > h3::after{
+  content:"";
+  display:block;
+  width: 80px;
+  height: 3px;
+  margin: .4rem auto 0;
+  background: var(--accent2-color);
+  border-radius: 2px;
+}
+
+
+
 
