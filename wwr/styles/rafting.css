@@ -504,6 +504,84 @@ a:focus-visible{
   }
   .newsletter .btn{ width:100%; }
 }
+/* ================================
+   TRIPS PAGE — catálogo + tabla
+   ================================ */
+
+/* ——— Catálogo de viajes (reusa .home-grid/.card) ——— */
+/* Ajuste visual para títulos dentro de cards en Trips */
+#trips.card h3, 
+#trips .card h3{
+  margin-top:.35rem;
+  color: var(--primary-color);
+}
+
+/* Asegura una altura uniforme para fotos de cards de trips */
+#trips .card img{
+  width:100%;
+  height:200px;          /* un poco más altas que Home */
+  object-fit:cover;
+  border-radius:.5rem;
+}
+
+/* Lista breve de specs dentro de cada card */
+#trips .card ul{
+  margin:.25rem 0 .5rem;
+  padding-left:1.1rem;   /* indent para bullets */
+  line-height:1.45;
+}
+#trips .card li{ margin:.15rem 0; }
+
+/* Responsivo opcional para el grid de trips:
+   si usas .home-grid, ya tienes 3 cols -> 1 col en móvil.
+   Si quieres 2 columnas en tablets, descomenta:
+*/
+/*
+@media (max-width: 1000px){
+  .home-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px){
+  .home-grid{ grid-template-columns: 1fr; }
+}
+*/
+
+/* ——— Tabla comparativa ——— */
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.98rem;
+}
+thead th{
+  text-align:left;
+  background: var(--panel);
+  color:#222;
+}
+th, td{
+  padding:.65rem .6rem;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+tbody tr:hover{
+  background:#fafafa;
+}
+
+/* Utilidad para captions invisibles pero accesibles */
+.sr-only{
+  position:absolute;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); border:0;
+}
+
+/* ——— Pequeños ajustes del hero de Trips (opcional) ——— */
+/* Si el texto del hero se superpone demasiado, baja la tarjeta. */
+.trips-hero .hero-card{ bottom: 16px; }
+/* Si usas la misma .hero, puedes aplicar la clase en el <section>:
+   <section class="hero trips-hero"> … </section>
+*/
+
+/* ——— CTA final (reusa .cta-banner/.btn) ——— */
+/* Si quieres más separación arriba en Trips */
+.trips-end.cta-banner{ margin-top: 1.5rem; }
 
 
 

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rafting with us | Trips & Adventures</title>
+    <meta name="description"
+        content="Choose from half-day, full-day, and advanced whitewater rafting trips. Compare difficulty, duration, and requirements, and book your adventure.">
+    <meta name="author" content="Cristian Inafuku">
+
+    <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+
+<body>
+    <!-- ===== HEADER (común) ===== -->
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="images/z-downriver.png" alt="Rafting with us logo" width="110">
+        </a>
+        <nav class="site-nav pill">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html" aria-current="page">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HERO corto ===== -->
+        <section class="hero" aria-label="Trips hero">
+            <img src="images/hero-trips.jpg" alt="Rafting boat entering a rapid in a scenic canyon">
+            <h1>Find your perfect trip</h1>
+            <div class="hero-card">
+                <article>
+                    <h2>Half-day, full-day & advanced runs</h2>
+                    <img class="hero-small" src="images/feature-rivers.jpg" alt="Raft riding a standing wave">
+                    <p>From family-friendly floats to technical rapids — our guides tailor the experience to your crew.
+                    </p>
+                    <p><a class="btn cta" href="#trips">Browse trips</a></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== GRID de TRIPS (reusa .home-grid / .card) ===== -->
+        <section id="trips" class="home-grid" aria-label="Trip catalog">
+            <article id="family" class="card">
+                <img src="images/trip-family-float.jpg" alt="Calm family float through a scenic river bend">
+                <h3>Family Float (Half-Day)</h3>
+                <p>Gentle current, splashy fun, and scenic stops. Perfect for first-timers and kids.</p>
+                <ul>
+                    <li>Difficulty: Class I–II</li>
+                    <li>Duration: ~3.5 hours</li>
+                    <li>Min Age: 6+</li>
+                </ul>
+                <p><a class="btn" href="contact.html#form">Check availability</a></p>
+            </article>
+
+            <article class="card">
+                <img src="images/trip-half-day.jpg" alt="Group paddling through small standing waves">
+                <h3>Half-Day Adventure</h3>
+                <p>A compact burst of whitewater with time for photos and a riverside break.</p>
+                <ul>
+                    <li>Difficulty: Class II–III</li>
+                    <li>Duration: ~4 hours</li>
+                    <li>Min Age: 10+</li>
+                </ul>
+                <p><a class="btn" href="contact.html#form">Check availability</a></p>
+            </article>
+
+            <article class="card">
+                <img src="images/trip-full-day.jpg" alt="Boat navigating a mid-sized rapid under blue skies">
+                <h3>Full-Day Classic</h3>
+                <p>Our most popular route: diverse rapids, riverside lunch, and plenty of splash.</p>
+                <ul>
+                    <li>Difficulty: Class II–III+</li>
+                    <li>Duration: ~7 hours</li>
+                    <li>Min Age: 12+</li>
+                </ul>
+                <p><a class="btn" href="contact.html#form">Check availability</a></p>
+            </article>
+
+            <article class="card">
+                <img src="images/trip-big-mallard.jpg" alt="Raft dropping into a bigger wave feature">
+                <h3>Big Mallard Rapids</h3>
+                <p>Iconic features and technical lines for adventurous paddlers ready to level up.</p>
+                <ul>
+                    <li>Difficulty: Class III–IV</li>
+                    <li>Duration: ~6 hours</li>
+                    <li>Min Age: 14+</li>
+                </ul>
+                <p><a class="btn" href="contact.html#form">Check availability</a></p>
+            </article>
+
+            <article class="card">
+                <img src="images/trip-dientes-diablo.jpg"
+                    alt="High-energy rapid with spray and strong expression lines">
+                <h3>Los Dientes del Diablo</h3>
+                <p>Powerful water and punchy waves. For experienced crews seeking a challenge.</p>
+                <ul>
+                    <li>Difficulty: Class IV</li>
+                    <li>Duration: ~5 hours</li>
+                    <li>Min Age: 16+</li>
+                </ul>
+                <p><a class="btn" href="contact.html#form">Check availability</a></p>
+            </article>
+        </section>
+
+        <!-- ===== TABLA COMPARATIVA ===== -->
+        <section class="section card" aria-labelledby="compare-title">
+            <h3 id="compare-title">Compare trips at a glance</h3>
+            <div style="overflow-x:auto">
+                <table aria-describedby="compare-note">
+                    <caption class="sr-only">Trip comparison by difficulty, duration, and age</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Trip</th>
+                            <th scope="col">Difficulty</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Min Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="#family">Family Float</a></th>
+                            <td>Class I–II</td>
+                            <td>~3.5 h</td>
+                            <td>6+</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Half-Day Adventure</th>
+                            <td>Class II–III</td>
+                            <td>~4 h</td>
+                            <td>10+</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Full-Day Classic</th>
+                            <td>Class II–III+</td>
+                            <td>~7 h</td>
+                            <td>12+</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Big Mallard Rapids</th>
+                            <td>Class III–IV</td>
+                            <td>~6 h</td>
+                            <td>14+</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Los Dientes del Diablo</th>
+                            <td>Class IV</td>
+                            <td>~5 h</td>
+                            <td>16+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p id="compare-note" style="margin-top:.5rem; font-size:.95rem;">
+                All trips include helmets, PFDs, and safety briefing. Water levels and conditions may affect available
+                routes.
+            </p>
+        </section>
+
+        <!-- ===== CTA FINAL ===== -->
+        <section class="cta-banner" aria-label="Booking call to action">
+            <h2>Ready to book your seats?</h2>
+            <p>Message our team for dates, group rates, and custom itineraries.</p>
+            <p><a class="btn cta" href="contact.html#form">Contact & Booking</a></p>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER (común) ===== -->
+    <footer class="site-footer">
+        <p>©2025 Rafting with us — Cristian Inafuku</p>
+        <nav class="socialmedia" aria-label="Social media">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/intagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="images/x.png" alt="X (Twitter)">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
